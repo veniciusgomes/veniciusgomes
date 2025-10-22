@@ -2,6 +2,8 @@
 
 ![Minhas Estatísticas no GitHub](https://github-readme-stats.vercel.app/api?username=veniciusgomes&show_icons=true&theme=radical)
 
+![Minhas Linguagens Mais Usadas](https://github-readme-stats.vercel.app/api/top-langs/?username=veniciusgomes&layout=compact&theme=radical)
+
 <!--
 **veniciusgomes/veniciusgomes** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
