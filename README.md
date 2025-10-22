@@ -2,7 +2,6 @@
   <h1>Sobre Mim</h1>
   <p>🔹 Hoje trabalho com ReactJS e NodeJS.</p>
   <p>🔹 Tenho um pouco de experiência com Python também.</p>
-  <p>🔹 Meus pronomes são ele/dele.</p>
   <p>🔹 Gosto de fazer projetinhos de forma esporádica.</p>
 
   <br>
