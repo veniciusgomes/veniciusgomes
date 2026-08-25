@@ -57,12 +57,12 @@ Projeto colaborativo de ciência de dados, desenvolvido durante pós-graduação
 ## 📊 Estatísticas do GitHub
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=veniciusgomes&show_icons=true&theme=tokyonight&hide_border=true" alt="Estatísticas do GitHub" height="165" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=veniciusgomes&layout=compact&theme=tokyonight&hide_border=true" alt="Linguagens mais usadas" height="165" />
+  <img src="./profile/stats.svg" alt="Estatísticas do GitHub" height="165" />
+  <img src="./profile/top-langs.svg" alt="Linguagens mais usadas" height="165" />
 </div>
 
 <div align="center">
-  <img src="https://streak-stats.demolab.com/?user=veniciusgomes&theme=tokyonight&hide_border=true" alt="Sequência de commits" />
+  <img src="./profile/streak.svg" alt="Sequência de commits" />
 </div>
 
 <br>
