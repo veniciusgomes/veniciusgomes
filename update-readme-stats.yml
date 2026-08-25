@@ -1,0 +1,49 @@
+name: Update README stats cards
+
+on:
+  schedule:
+    - cron: "0 3 * * *" # todo dia às 03:00 UTC
+  workflow_dispatch: # permite rodar manualmente na aba Actions
+  push:
+    paths:
+      - ".github/workflows/update-readme-stats.yml"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Gerar card de estatísticas
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: username=veniciusgomes&show_icons=true&theme=tokyonight&hide_border=true
+          path: profile/stats.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Gerar card de linguagens mais usadas
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: username=veniciusgomes&layout=compact&theme=tokyonight&hide_border=true
+          path: profile/top-langs.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Gerar card de streak de commits
+        uses: DenverCoder1/github-readme-streak-stats@main
+        with:
+          options: user=veniciusgomes&theme=tokyonight&hide_border=true
+          path: profile/streak.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commitar cards atualizados
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile/*.svg
+          git commit -m "chore: atualizar cards de estatísticas" || exit 0
+          git push
